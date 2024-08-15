@@ -1,0 +1,150 @@
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-post input,
+.new-post textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Formatting options styling */
+.formatting-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formatting-options select {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.formatting-options button {
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.formatting-options button.active,
+.formatting-options button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog layout with sidebar */
+.blog-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  flex: 1;
+  max-width: 25%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f1f1f1;
+}
+
+.sidebar-item.completed {
+  text-decoration: line-through;
+  color: #28a745;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .post {
+  margin-bottom: 20px;
+}
+
+.main-content .post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-content .post.completed h2 {
+  text-decoration: line-through;
+  color: #28a745;
+}
+
+.main-content button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-content button:hover {
+  background-color: #0056b3;
+}
+
+.main-content button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+.main-content button:nth-child(2):hover {
+  background-color: #c82333;
+}
